@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project QR</title>
+</head>
+<style>
+    body {
+        position: relative;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #00ffea, #ff00ea);
+        font-family: Arial, sans-serif;
+    }
+    .qr {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 280px;
+        height: 280px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        margin-bottom: 10px;
+    }
+    p {
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+    }
+    .scan-text {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 32px;
+        font-weight: bold;
+        color: #00fbfb;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    .header{
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: bisque;
+        font-size: 24px;
+        font-weight: bold;
+        z-index: 10;
+    }
+    .top-left {
+        top: 20px;
+        left: 20px;
+    }
+    .top-right {
+        top: 20px;
+        right: 20px;
+    }
+    .center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .bottom-left {
+        bottom: 20px;
+        left: 20px;
+    }
+    .bottom-right {
+        bottom: 20px;
+        right: 20px;
+    }
+    .header{
+        color:rgb(13, 255, 0);
+        font-size: 55px;
+        font-weight: italic;
+        box-shadow: 0 0 10px #00ffea;
+        border-radius: 15px;
+    }
+</style>
+<body>
+  <div class="header">Mitti AI</div>
+  <div class="qr top-left">
+    <img src="qr/Project_Scanner.png" alt="QR Icon">
+    <p>Project Development</p>
+  </div>
+  <div class="qr top-right">
+    <img src="qr/Product Advertise.png" alt="QR Icon">
+    <p> Advertisement</p>
+  </div>
+  <div class="qr center">
+    <img src="qr/website.png" alt="QR Icon">
+    <p>Saathi AI (Web)</p>
+  </div>
+  <div class="qr bottom-left">
+    <img src="qr/portfolio.png" alt="QR Icon">
+    <p>My Portfolio</p>
+  </div>
+  <div class="qr bottom-right">
+    <img src="qr/Application.png" alt="QR Icon">
+    <p>Saathi AI (Apk)</p>
+  </div>
+  <div class="scan-text">Scan Qr Code For More Details</div>
+</body>
